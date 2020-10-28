@@ -1,4 +1,4 @@
-# A simple PaypalButton Component.[Live version](https://theghost1980.github.io/PPALbtn/)
+# A simple PaypalButton Component. [Sandbox Live version](https://theghost1980.github.io/PPALbtn/)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
