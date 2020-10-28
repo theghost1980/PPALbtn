@@ -3,42 +3,43 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Using one tutorial
 
-In the project directory, you can run:
+By using one of the many tutorials available, I have created this simple component that may allow you to use the paypal buttons on your app.
 
-### `npm start`
+### Cloning or dowloading
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Just copy the content of src and public to your local app folder, and make the changes or just use the code.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+In order to learn how to use the PayPal api, there is some steps you need to do.
 
-### `npm test`
+### Setting up the Developer section on [PayPal](https://developer.paypal.com/home/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Basically they have a nice documentation. The basics are:
+- Log in into your paypal account.
+- Go to developer section.
+- Under 'My apps & credentials', you can create a new app enviroment or just use the default one. I have used the default.
+- Click on App name to view the details.
+- Note: The account for the sandbox enviroment is the one with the domain as business. The dashboard will create also a business and personal accounts for you as default. I have use both of them.
+- Copy the info detailed as id. You need to modify one line of code in the index.HTML in your public folder.
+<!-- paypal call -->
+    <script src="https://www.paypal.com/sdk/js?client-id="HERE-YOUR-ID-FROM-MYAPPs"&currency=GBP" />
+<!-- end paypal call -->
 
-### `npm run build`
+### Sandbox accounts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As you may see, the system creates 2 default accounts for testing.
+- The business account. It will be the one you will use as the one who gets the payments. You can also [log in into the sandbox](https://www.sandbox.paypal.com) to test it while you make a purchase.
+- The personal account it will be the one you use as if you were a buyer.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### For any other doubt
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Take a look on the same tutorial [I have followed in here](https://medium.com/@bolajifemi28/how-to-add-paypal-checkout-to-your-react-app-37d44c58a896)
 
-### `npm run eject`
+If you run some issues, feel free to send me a message anytime.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Happy Coding!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
@@ -46,28 +47,3 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# ReactPPBtn
-# PPALbtn
